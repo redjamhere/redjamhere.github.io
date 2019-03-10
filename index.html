@@ -4,26 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <title>Помой палец</title>
 </head>
     <style>
-        p {
-            text-align: center;        
+        @font-face {
+            font-family: Pompadur; /* Гарнитура шрифта */
+            src: url(fonts/qq.ttf); /* Путь к файлу со шрифтом */
         }
-        s {
-            color: red;
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Pompadur';
         }
-        #sosi-pisos {
+        .warp {
             position: absolute;
             margin: auto;
-            top: 0; bottom: 0; right: 0; left: 0;
-
+            height: 600px;
+            width: 1000px;
+            top: 0; right: 0; bottom: 0; left: 0;
+            text-align: center;
+            line-height: 600px;
+            z-index: 1;
+        }
+        p {
+            font-size: 250px;
+            z-index: 1;
+        }
+        
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            opacity: 0.7;
         }
     </style>
-<body>
-    <p>Welcome to <s>redjam</s>'s page</p>
-    <video id="sosi-pisos" width=600px" poster="https://i.pinimg.com/736x/64/e8/48/64e84853aaa2a974fc88b1a4c614a7f2.jpg" loop autoplay controls muted>
-        <source src="./videosos.mp4">
-    </video>
+<body onload="setInterval(changecolors,)">
+
+    <div class="warp">
+        <p>REDJAM</p>
+    </div>
+    <video src="./lock.mp4" autoplay muted loop></video>
+
+    <iframe src="250-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+    <audio id="audio" autoplay loop>
+        <source src="cisum.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        let state = false
+            function changecolors(){
+                let body = (state) ? "red" : "white"
+                let text = (!state) ? "red" : "white"
+
+                $('body').css('background', body)
+                $('p').css('color', text)
+                state=!state
+        }
+
+        let audio = document.querySelector("audio")
+        audio.volume = 0.02
+    </script>
 </body>
 </html>
