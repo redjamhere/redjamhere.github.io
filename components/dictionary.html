@@ -1,30 +1,21 @@
+<head>
+  <script src="../renders/dictionary.js"></script>
+</head>
 <div class="dictionary">
-  <div class="tbl-header">
-    <table cellpadding="0" cellspacing="0" border="0">
-      <thead>
-        <tr>
-          <th>English</th>
-          <th>Русский</th>
-        </tr>
-      </thead>
-    </table>
-  </div>
-  <div class="tbl-content">
-    <table cellpadding="0" cellspacing="0" border="0">
-        <tbody>
+    <div class="tbl-header">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <thead>
           <tr>
-            <td>Car</td>
-            <td>Машина</td>
+            <th>English</th>
+            <th>Русский</th>
           </tr>
-          <tr>
-            <td>Computer</td>
-            <td>Компьютер</td>
-          </tr>
-          <tr>
-            <td>Mouse</td>
-            <td>Мышь</td>
-          </tr>
-          <tr>
+        </thead>
+      </table>
+    </div>
+    <div class="tbl-content">
+      <table cellpadding="0" cellspacing="0" border="0">
+          <tbody>
+            <tr>
               <td>Car</td>
               <td>Машина</td>
             </tr>
@@ -96,19 +87,17 @@
                         <td>Mouse</td>
                         <td>Мышь</td>
                       </tr>
-                      <tr>
-                          <td>Car</td>
-                          <td>Машина</td>
-                        </tr>
-                        <tr>
-                          <td>Computer</td>
-                          <td>Компьютер</td>
-                        </tr>
-                        <tr>
-                          <td>Mouse</td>
-                          <td>Мышь</td>
-                        </tr>
-        </tbody>
-      </table>
+          </tbody>
+        </table>
+      </div>
+</div>
+<div class="switcher-block">
+  <span class="spec is active">ИС</span>
+    <div class="switcher">
+      <label class="switch">
+        <input onclick="checkSpec()" class="check" type="checkbox">
+        <span class="slider round"></span>
+      </label>
     </div>
+    <span class="spec av">АВ</span>
 </div>
