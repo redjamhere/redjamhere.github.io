@@ -86,6 +86,11 @@ footer {
   font-size: 30px;
 }
 
+.dictionary{
+  overflow: auto;
+  height: 100%;
+}
+
 .dictionary table {
   width:100%;
   table-layout: fixed;
@@ -96,11 +101,17 @@ footer {
   display: flex;
   align-items: center;
   box-shadow: 0 0 10px gray;
+  position: fixed;
+  background: white;
 }
 
 .tbl-header th {
   font-size: 18px;
   color: #34495e;
+}
+
+.tbl-content {
+  margin-top: 40px;
 }
 
 .tbl-content td{
