@@ -89,6 +89,7 @@ footer {
 .dictionary{
   overflow: auto;
   height: 100%;
+
 }
 
 .dictionary table {
@@ -123,4 +124,51 @@ footer {
   text-align: center;
   height: 50px;
   color: #2c3e50;
+}
+
+.btn-block {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  height: 60px;
+  width: 300px;
+  font-size: 30px;
+  background-color: #2ecc71;
+  border-radius: 7px;
+  border: 0;
+  color: white;
+  border-bottom: 7px solid rgb(44, 62, 80, .4);
+}
+
+.btn:active {
+  width: 250px;
+  height: 50px;
+  font-size: 24px;
+}
+
+@media (min-width: 1024px) {
+  .warp {
+    border-right: 1px solid rgb(127, 140, 141, .4);
+    border-left: 1px solid rgb(127, 140, 141, .4);
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    height: 100vh;
+    width: 400px;
+    grid-template-rows: 7% 84% 9%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  }
+  
+  .dictionary table {
+    width:400px;
+    table-layout: fixed;
+  }
 }
