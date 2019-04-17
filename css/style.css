@@ -74,7 +74,7 @@ footer {
 }
 
 .footer button {
-  font-size: 36px;
+  font-size: 34px;
   border: 0;
   background: 0;
   margin: 0 15px 0 15px;
@@ -84,4 +84,28 @@ footer {
 
 .footer button:active {
   font-size: 30px;
+}
+
+.dictionary table {
+  width:100%;
+  table-layout: fixed;
+}
+
+.tbl-header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px gray;
+}
+
+.tbl-header th {
+  font-size: 18px;
+  color: #34495e;
+}
+
+.tbl-content td{
+  font-size: 24px;
+  padding-left: 10px;
+  height: 50px;
+  color: #2c3e50;
 }
