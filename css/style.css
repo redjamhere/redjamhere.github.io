@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.warp {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-rows: 7% 84% 9%;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "header"
+  "content"
+  "footer";
+  margin: 0;
+}
+
+#includes {
+  height: 100%;
+}
+
+header{
+  background-color: #2ecc71;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+footer {
+  border-top: 1px solid #7f8c8d;
+}
+
+.appName {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.home {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home h1, p {
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 48px;
+  color: #7f8c8d;
+}
+
+.home p {
+  font-size: 18px;
+  color: #34495e;
+}
+
+.footer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer button {
+  font-size: 36px;
+  border: 0;
+  background: 0;
+  margin: 0 15px 0 15px;
+  color: #2ecc71;
+  outline: 0;
+}
+
+.footer button:active {
+  font-size: 30px;
+}
