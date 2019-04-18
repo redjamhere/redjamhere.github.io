@@ -1,11 +1,11 @@
 function gameBegin() {
   $('.btn').text('Начать заного')
   var words = [
-    "программа",
-    "оладушек",
-    "помидор",
-    "утро",
-    "солнце"
+    "keyboard",
+    "smartphone",
+    "apple",
+    "display",
+    "pixel"
   ]
   
   var word = words[Math.floor(Math.random() * words.length)]
