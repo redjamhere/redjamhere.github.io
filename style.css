@@ -1,0 +1,44 @@
+* {
+  padding:0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-areas: 
+  "nav nav nav"
+  "content content content"
+  "footer footer footer";
+  grid-template-rows: 50px 1fr 50px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  grid-area: nav;
+}
+
+article {
+  grid-area: content;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.pagewarp {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom:50px;
+}
+
+.pagewarp .btn {
+  width: 130px;
+}
